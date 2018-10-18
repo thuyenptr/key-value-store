@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lap11852/Desktop/key-value-store/Server/include/BTree.h
+BTreeNode.h
+/home/lap11852/Desktop/key-value-store/Server/include/BTreeNode.h
+utils.h
+/home/lap11852/Desktop/key-value-store/Server/include/utils.h
+
+/home/lap11852/Desktop/key-value-store/Server/include/BTreeNode.h
+DataStore.h
+/home/lap11852/Desktop/key-value-store/Server/include/DataStore.h
+
+/home/lap11852/Desktop/key-value-store/Server/include/BTreeStorage.h
+KeyValueStore.h
+/home/lap11852/Desktop/key-value-store/Server/include/KeyValueStore.h
+
+/home/lap11852/Desktop/key-value-store/Server/include/DataStore.h
+Global.h
+/home/lap11852/Desktop/key-value-store/Server/include/Global.h
+
+/home/lap11852/Desktop/key-value-store/Server/include/Global.h
+string.h
+/home/lap11852/Desktop/key-value-store/Server/include/string.h
+iostream
+-
+
+/home/lap11852/Desktop/key-value-store/Server/include/KeyValueStore.h
+BTree.h
+/home/lap11852/Desktop/key-value-store/Server/include/BTree.h
+
+/home/lap11852/Desktop/key-value-store/Server/include/utils.h
+BTree.h
+/home/lap11852/Desktop/key-value-store/Server/include/BTree.h
+
+/home/lap11852/Desktop/key-value-store/Server/src/BTreeStorage.cpp
+../include/BTreeStorage.h
+/home/lap11852/Desktop/key-value-store/Server/include/BTreeStorage.h
+
