@@ -25,7 +25,7 @@ cmake version:  3.13.0-rc1
 	- cmake .
 	- make clean
 	- make
-	- ./Client -<mode> -<add>
+	- ./Client -`mode` -`add`
 - Nếu mode là -s => chạy single client
 - Nếu mode là -m => chạy multiple client => thêm argument sau:
 	- s : set command
@@ -172,7 +172,7 @@ Low Addresses    |          Text        |
 
 #### Issue implement BTree
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/381_a.gif)
+![Alt Text](https://github.com/billhcmus/key-value-store/blob/master/img/381_a.gif)
 
 [Reference](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap19.htm)
 
@@ -252,7 +252,7 @@ void Server::set_func(void *arg) {
 #### Work flow
 
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/key-value-stores.png)
+![Alt Text](https://github.com/billhcmus/key-value-store/blob/master/img/key-value-stores.png)
 
 * Client
     - Multiple Client open connection to connect to Server
