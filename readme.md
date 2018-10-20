@@ -48,7 +48,7 @@ cmake version:  3.13.0-rc1
 
 - Local Memory Allocation on the Stack
 
-```C
+```cpp
 int a = 10;
 ```
 - Ví dụ trên khai báo một biến kiểu nguyên, cấp phát môt vùng nhớ để lưu trữ số nguyên 4 bytes. Ta tham chiếu đến data trong bộ nhớ thông qua biến a.
