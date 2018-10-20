@@ -55,7 +55,7 @@ int a = 10;
 
 - ```Local Memory Allocation``` đề cập đến quá trình mà chương trình tạo không gian lưu trữ của dữ liệu. Quá trình cấp phát này là cấp phát cục bộ, xảy ra trong phạm vi scope và khi hàm trả về thì bộ nhớ được thu hồi.
 
-```C
+```cpp
 int * plus(int a, int b) {
     int c = a + b;
     return &c;
@@ -73,7 +73,7 @@ int main(int argc, char * argv[]) {
 
 - ```Stack Allocation``` Mỗi function đều chứa trên stack một cấu trúc gọi là stack frame. Stack frame chứa tất cả bộ nhớ được phân bổ cũng như điểm thực thi khi gọi hàm, ```return pointer```.
 
-```C
+```cpp
 int gettwo(){
    return 2;
 } 
@@ -97,7 +97,7 @@ int main(){
 - Global Memoy Allocation on the Heap
 - Như ví dụ về hàm ```plus``` phía trên, ta không thể lấy con trỏ trỏ tới vùng nhớ biến c vì sau khi return memory bị deallocated. Do đó ta cần một phương thức cho global memory để ngăn tình trạng bị deallocated khi return function.
 
-```C
+```cpp
 Node* node = new Node();
 ```
 - Một biến cục bộ node trên stack có đủ bộ nhớ để chứa một địa chỉ. Giá trị trong ô nhớ tại địa chỉ được trả về bởi ```new Node()```. 
@@ -172,7 +172,7 @@ Low Addresses    |          Text        |
 
 #### Issue implement BTree
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/381_a.gif)
+![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/381_a.gif)
 
 [Reference](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap19.htm)
 
@@ -218,7 +218,7 @@ Low Addresses    |          Text        |
 - Problems: In the same time system allow multi-process can read database. But when write to database only one process can write and no one can read or write in this time.
 - Using a variable call rc, and init rc = 0, two Mutex: m_db_mutex, m_rc_mutex
 
-```C
+```cpp
 void Server::get_func(void *arg) {
     m_rc_mutex.lock(); // doc quyen truy xuat bien rc
     rc++;
@@ -252,7 +252,7 @@ void Server::set_func(void *arg) {
 #### Work flow
 
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/key-value-stores.png)
+![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/key-value-stores.png)
 
 * Client
     - Multiple Client open connection to connect to Server
