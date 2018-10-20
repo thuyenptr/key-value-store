@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-0c5fa53553ccefe53fca387230226c74 protoc/Communication.pb.h
