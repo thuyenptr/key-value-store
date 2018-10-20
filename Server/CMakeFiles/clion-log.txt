@@ -1,0 +1,6 @@
+/home/lap11852/Desktop/JetBrain/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lap11852/Desktop/key-value-store/Server
+-- Found Protobuf: /usr/local/lib/libprotobuf.so;-lpthread (found version "3.6.1") 
+-- Found Protobuf: /usr/local/lib/libprotobuf.so;-lpthread;-lpthread (found version "3.6.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lap11852/Desktop/key-value-store/Server

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Client" targetName="proto" />
+      <config projectName="Client" targetName="Client" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_DIR="." />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25926b00-192a-4a91-98e1-25aa945506d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/Server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/BTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/BTreeNode.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/BTreeStorage.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/CondVar.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/Global.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/Mutex.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/Task.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/ThreadPool.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/server.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/test/utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Client.dir/src/client.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Client.dir/src/client.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client" beforeDir="false" afterPath="$PROJECT_DIR$/Client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/CMakeFiles/proto.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protoc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/Server.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/CMakeFiles/proto.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/protoc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/protoc/Makefile" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/protoc/CMakeFiles/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-803806766">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="2" />
+          <entry key="csv" value="2" />
+          <entry key="h" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="446" />
+          <entry key="csv" value="1" />
+          <entry key="h" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="453" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/client.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data.csv" />
+        <option value="$PROJECT_DIR$/include/client.h" />
+        <option value="$PROJECT_DIR$/src/client.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="y" value="25" />
+    <option name="width" value="960" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Default" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="proto" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="proto" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.proto" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25926b00-192a-4a91-98e1-25aa945506d3" name="Default Changelist" comment="" />
+      <created>1539921329101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539921329101</updated>
+      <workItem from="1539921332130" duration="4152000" />
+      <workItem from="1539933258397" duration="1808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5960000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12166489" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988507" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32988507" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32988507" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="977" column="6" lean-forward="true" selection-start-line="977" selection-start-column="6" selection-end-line="977" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/client.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

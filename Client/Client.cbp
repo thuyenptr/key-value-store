@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Client"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\protoc\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Client">
+				<Option output="/home/lap11852/Desktop/key-value-store/Client/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lap11852/Desktop/key-value-store/Client"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 Client"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Client/fast">
+				<Option output="/home/lap11852/Desktop/key-value-store/Client/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lap11852/Desktop/key-value-store/Client"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 Client/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proto">
+				<Option output="/home/lap11852/Desktop/key-value-store/Client/protoc/libproto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client/protoc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 proto"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proto/fast">
+				<Option output="/home/lap11852/Desktop/key-value-store/Client/protoc/libproto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lap11852/Desktop/key-value-store/Client/protoc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 proto/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/lap11852/Desktop/key-value-store/Client/protoc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/include/client.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/include/config.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/main.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/protoc/Communication.pb.cc">
+			<Option target="proto"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/protoc/Communication.pb.cc.rule">
+			<Option target="proto"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/protoc/Communication.pb.h">
+			<Option target="proto"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/src/client.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lap11852/Desktop/key-value-store/Client/protoc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\protoc\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

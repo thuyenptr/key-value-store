@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+37e144b36c830a3218d7616679d0d4be protoc/Communication.pb.cc
+0c5fa53553ccefe53fca387230226c74 protoc/Communication.pb.h

@@ -1,0 +1,20 @@
+/home/lap11852/Desktop/JetBrain/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/lap11852/Desktop/key-value-store/Client
+-- The C compiler identification is GNU 7.3.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Protobuf: /usr/local/lib/libprotobuf.so;-lpthread (found version "3.6.1") 
+-- Found Protobuf: /usr/local/lib/libprotobuf.so;-lpthread;-lpthread (found version "3.6.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lap11852/Desktop/key-value-store/Client

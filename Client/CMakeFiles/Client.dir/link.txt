@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -lprotoc -pthread -g -lrt   CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/src/client.cpp.o  -o Client -Wl,-rpath,/usr/local/lib protoc/libproto.a /usr/local/lib/libprotobuf.so -lpthread 

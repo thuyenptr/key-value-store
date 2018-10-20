@@ -1,0 +1,6 @@
+/home/lap11852/Desktop/key-value-store/Server/CMakeFiles/rebuild_cache.dir
+/home/lap11852/Desktop/key-value-store/Server/CMakeFiles/edit_cache.dir
+/home/lap11852/Desktop/key-value-store/Server/CMakeFiles/Server.dir
+/home/lap11852/Desktop/key-value-store/Server/protoc/CMakeFiles/edit_cache.dir
+/home/lap11852/Desktop/key-value-store/Server/protoc/CMakeFiles/rebuild_cache.dir
+/home/lap11852/Desktop/key-value-store/Server/protoc/CMakeFiles/proto.dir
