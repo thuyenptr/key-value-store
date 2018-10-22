@@ -141,7 +141,7 @@ Low Addresses    |          Text        |
 
 #### Issue implement BTree
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/381_a.gif)
+![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/381_a.gif)
 
 [Reference](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap19.htm)
 
@@ -221,7 +221,7 @@ void Server::set_func(void *arg) {
 #### Work flow
 
 
-![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/key-value-stores.png)
+![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/key-value-stores.png)
 
 * Client
     - Multiple Client open connection to connect to Server
