@@ -1,59 +1,25 @@
 # Key Value Store
 
-## Môi trường
-
-```
-protobuf version: 3.6.1
-g++ version: 7.3.0
-cmake version:  3.13.0-rc1
-
-```
-
-## Chạy chương trình
-
-### Server:
-- Run command sau:
-	- ./render-proto-file.sh
-	- cmake .
-	- make clean
-	- make
-	- ./Server
-
-### Client:
-- Run command sau:
-	- ./render-proto-file.sh
-	- cmake .
-	- make clean
-	- make
-	- ./Client -```mode``` -```add```
-- Nếu mode là -s => chạy single client
-- Nếu mode là -m => chạy multiple client => thêm argument sau:
-	- s : set command
-	- g : get command
-	- r : remove command
-	- e : exist command
-
-
-## Các kiến thức cơ bản về hệ điều hành
+## Some knowledge about Operating System
 
 ### Memory Allocation
-- Định nghĩa đơn giản
-    - Dành bộ nhớ để làm một mục đích cụ thể.
-    - Các chương trình và services đã được dành một bộ nhớ cụ thể theo yêu cầu của chúng khi thực thi chương trình.
-    - Một khi chương trình kết thúc, bộ nhớ được giải phóng và được cấp phát cho chương trình khác hoặc gộp vào bộ nhớ chính.
+- Definition
+    - Memory allocation refers to the process by which the program makes space for the storage data.
+    - When declare a variable of a type, enough memory is allocation locally to store data of that type. The allocation is local, occurring within the scope of the function, and when that function returns the memory is deallocated.
+    - When program finishes, memory is deallocated and merge to main memory or use by another program.
 
-- Một số loại Memory Allocation:
-    - Static Memory Allocation: Chương trình được cấp phát bộ nhớ tại thời điểm biên dịch.
-    - Dynamic Memory Allocation: Chương trình được cấp phát bộ nhớ tại thời điểm thực thi.
+- Some type of Memory Allocation:
+    - Static Memory Allocation: Memory is allocated at compile time.
+    - Dynamic Memory Allocation: Memory is allocated at execute time.
 
 - Local Memory Allocation on the Stack
 
 ```cpp
 int a = 10;
 ```
-- Ví dụ trên khai báo một biến kiểu nguyên, cấp phát môt vùng nhớ để lưu trữ số nguyên 4 bytes. Ta tham chiếu đến data trong bộ nhớ thông qua biến a.
+- The declaration of the integer a will allocate memory for the storage for an integer (4-bytes). We refer to the data stored in memory via the variable a.
 
-- ```Local Memory Allocation``` đề cập đến quá trình mà chương trình tạo không gian lưu trữ của dữ liệu. Quá trình cấp phát này là cấp phát cục bộ, xảy ra trong phạm vi scope và khi hàm trả về thì bộ nhớ được thu hồi.
+- ```Local Memory Allocation``` refers to the process by which the program makes "space" for the storage of data. When you declare a variable of a type, enough memory is allocation locally to store data of that type. The allocation is local, occurring within the scope of the function, and when that function returns the memory is deallocated
 
 ```cpp
 int * plus(int a, int b) {
@@ -61,49 +27,54 @@ int * plus(int a, int b) {
     return &c;
 }
 
-// Khi return vùng nhớ local của c bị deallocated
-// Do do con trỏ ptr có thể hoạt động không đúng, khi trỏ
-// vào vùng nhớ không hợp lệ.
-
 int main(int argc, char * argv[]) {
     int *ptr= plus(1, 2);
     printf("%d\n", * p);
 }
 ```
 
-- ```Stack Allocation``` Mỗi function đều chứa trên stack một cấu trúc gọi là stack frame. Stack frame chứa tất cả bộ nhớ được phân bổ cũng như điểm thực thi khi gọi hàm, ```return pointer```.
+- In above example, What's the problem? The memory of c is deallocated once the function returns, and now p is referencing a memory address which is unallocated. The print statement, which deferences p, following the pointer to the memory address, may fail.
+
+- Another term for local memory allocation is ```stack allocation``` because the way programs track execution across functions is based on a stack.
+
+- Each function is contained within a structure on the stack called a stack frame. A stack frame contains all the allocated memory from variable deliberations as well as a pointer to the execution point of the calling function, the so called return pointer. A very common exploit in computer security is a buffer overflow attack where an attacker overwrite the return pointer such that when the function returns, code chosen by the attacker is executed.
+
+
 
 ```cpp
-int gettwo(){
+int get_two(){
    return 2;
 } 
 
-int getone(){
+int get_one(){
   return 1;
 }
 
-int addonetwo(){
-  int one = getone();
-  int two = gettwo();
+int add_one_two(){
+  int one = get_one();
+  int two = get_two();
   return one+two;
 }
 
 int main(){
-  int a = addonetwo();
+  int a = add_one_two();
 
 }
 ```
 
 - Global Memoy Allocation on the Heap
-- Như ví dụ về hàm ```plus``` phía trên, ta không thể lấy con trỏ trỏ tới vùng nhớ biến c vì sau khi return memory bị deallocated. Do đó ta cần một phương thức cho global memory để ngăn tình trạng bị deallocated khi return function.
+- The sample program with ```plus()``` from the previous section doesn't work properly when returning a memory reference, it does not mean you cannot write functions that return a memory reference.
 
 ```cpp
 Node* node = new Node();
 ```
-- Một biến cục bộ node trên stack có đủ bộ nhớ để chứa một địa chỉ. Giá trị trong ô nhớ tại địa chỉ được trả về bởi ```new Node()```. 
-- Global memory cho một chương trình gọi là heap. Là một cấu trúc dữ liệu phân mảnh.
+- The local variable declaration is for the variable node, but that's just a pointer to some memory. The variable node is declared on the stack and has enough memory to store a memory address.
+- The value of that memory address is set by the return of the call new Node(). The new function will automatically allocate enough memory to store a Node structure and the node variable now references that memory. Of course, the memory cannot have been allocated on the stack, this memory must have been allocated somewhere else, the ```new``` function performs a dynamic memory allocate on the heap.
+- The deallocation function is free() (equivalent to delete in C++), which takes a pointer value as input and "frees" the referenced memory on the heap.
 
 - Memory Leaks
+
+    - In C (and C++), the programer is responsible for memory management, which includes both the allocation and deallocation of memory. As a result, there are many mistakes that can be made, which is natural considering that all programers make mistakes. Perhaps the most common mistake is a memory leak, where heap allocated memory is not freed.
 
 - Program Layout: Stack vs. Heap
 
@@ -122,7 +93,7 @@ base pointer ->  | - - - - - - - - - - -|
                  .                      .
                  .                      .   (other memory maps do occur here, such 
                  .                      .    as dynamic libraries, and different memory
-                 :                      :    alloocat)
+                 :                      :    allocat)
                  |           ^          |
                  |           |          |
  break point ->  | - - - - - - - - - - -|   Dynamic memory is declared on the heap
@@ -137,18 +108,16 @@ Low Addresses    |          Text        |
       0 ----->   '----------------------'  
 ```
 
-- Stack ```base pointer``` trỏ đến top của stack, khi function call hay return nó sẽ làm nhiệm vụ của nó.
-- ```Break point``` trỏ đến top của vùng data segment của chương trình chứa vùng heap. khi heap đầy và yêu cầu nhiều không gian nhớ hơn, beak point được set tới địa chỉ cao hơn.
-
-### Page Table
-
-### User and Kernel Space
+- At the higher addresses is the stack and the lower address is the heap. The two memory allocation regions grow into the middle of the address space, which is unused and unallocated.
+- In this way, the two allocations will not interfere with each other.
+- Stack ```base pointer``` point to the top of stack, when function call or return, it will shift appropriately.
+- The ```break point``` refers to the top of the programs data segment, which contains the heap. As the heap fills up, requirement more space, the break is set to higher addresses.
 
 ### Memory Mapping
 
-- Nằm giữa break point và base pointer là unallocated memory, hay có thể là vùng không sử dụng.
-- Vùng này có thể là vùng ánh xạ bộ nhớ. Với một process load dữ liệu từ file vào memory, khi read hoặc write file.
-- Một các khác để sử dụng vùng địa chỉ ở giữa đó là load dynamic shared libraries. Khi gọi một hàm printf() hay malloc(), code của function này được giữ ở shared libraries, hay standard library. Chương trình phải chạy code này, tuy nhiên OS lại không muốn load quá nhiều code vào memory. Thay vào đó nó ánh xạ mã cần thiết vào vùng nhớ ở giữa.
+- Between the break point and the base pointer is unallocated memory, but it may not be unused. This region can be memory mapped, which is the process of loading data directly from files into memory. You can directly memory map files, but often this is done automatically for you when you read and write files.
+
+- Another common use for the middle addresses is the loading of dynamic shared libraries. When you make a call to a function like printf() or malloc(), the code for those functions exist in shared libraries, the standard C library, to be precise. Your program must run that code, but the operating system doesn't want to have load more code into memory than needed. Instead, the O.S. loads shared libraries dynamically, and when it does so, it maps the necessary code into the middle address spaces.
 
 
 ### Key Value Store
@@ -172,7 +141,7 @@ Low Addresses    |          Text        |
 
 #### Issue implement BTree
 
-![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/381_a.gif)
+![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/381_a.gif)
 
 [Reference](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap19.htm)
 
@@ -252,7 +221,7 @@ void Server::set_func(void *arg) {
 #### Work flow
 
 
-![Alt Text](https://raw.githubusercontent.com/billhcmus/key-value-store/master/img/key-value-stores.png)
+![Alt Text](https://gitlab.zalopay.vn/thuyenpt/key-value-store/raw/master/img/key-value-stores.png)
 
 * Client
     - Multiple Client open connection to connect to Server
