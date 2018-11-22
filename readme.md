@@ -1,4 +1,4 @@
-# Key Value Store
+# Key Value Store using B-Tree
 
 ## Some knowledge about Operating System
 
